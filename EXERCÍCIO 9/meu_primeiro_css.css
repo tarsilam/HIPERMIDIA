@@ -1,0 +1,24 @@
+{
+  margin-top: 100px;
+  margin-left: 70px;
+  margin-right: 40px;
+  padding: 0;
+}
+
+p {
+	background-image: url(background-1659227_960_720.jpg);
+	background-repeat: no-repeat;
+	font-family: Arial;
+	font-size: 20px;
+
+}
+
+p:hover{
+	color: white;
+	padding-top: 25px;
+}
+
+<div> height: 500px;
+width: 200px;
+border: 1px solid black;
+background: orange; <div>
