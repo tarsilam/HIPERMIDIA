@@ -1,0 +1,318 @@
+/* Criação da grid */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Gabriela', serif;
+	display: grid;
+	grid-template-areas: "header header header" "nav section aside" "nav section aside" "footer footer footer"  ;
+	grid-template-rows: 25vh 80vh 15vh;
+	grid-template-columns: 25% 1fr 28%; 
+}
+
+.header{
+	
+	grid-area: header;
+	align-items: center;
+	align-content: center;
+	font-size: 15pt;
+	position: relative;
+	display: flex;
+	background: linear-gradient(#58FA58,#D8D8D8,#58FA58);
+}
+
+.nav{
+	
+	grid-area: nav;
+	background: linear-gradient(#58FA58,#D8D8D8,#58FA58);
+	
+}
+
+.section{
+	
+	grid-area: section;
+	align-items: center;
+	background: linear-gradient(#58FA58,#D8D8D8,#58FA58);
+}
+
+.aside{
+	
+	grid-area: aside;
+	background: linear-gradient(#58FA58,#D8D8D8,#58FA58);
+	align-items: center;
+	position: relative;
+}
+
+.footer{
+	
+	grid-area: footer;
+	align-items: center;
+	background: linear-gradient(#58FA58,#D8D8D8,#58FA58);
+}
+
+/* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */
+
+.logo{
+	position: relative;
+	top: -10px;
+	width: 15%;
+	margin-left: 65px;
+}
+
+.div1{
+	list-style: none;
+	position: relative;
+	left: 23%;
+	top: 55px;
+}
+
+.lista{
+	display: inline;
+}
+
+.link{
+	padding-right: 50px;
+	padding-left: 50px;
+	margin:5px;
+	background: #04B404;
+	text-decoration: none;
+	color: black;
+	border-radius: 20px;
+}
+
+.link:hover{
+	background:#BFFF00;
+
+}
+
+.div2{
+	font-size: 8pt;
+	list-style: none;
+	
+	position: relative;
+	margin-left: -5vh;
+	top: -60px;
+	
+}
+
+.lista2{
+	display: inline;
+}
+
+.link2 {
+	margin: 7px;
+	border-right: 2px solid black;
+	padding: 4px;
+}
+
+.div3{
+	
+	margin-left: -310px;
+	top: -20px;
+	position: relative;
+}
+
+.botao{
+	padding: 5px;
+	margin-left: -30px;
+	position: relative;
+}
+
+.ul-nav{
+	
+	position: relative;
+	margin-left: -84px;
+	font-size: 10pt;
+	list-style: none;
+}
+
+/* NAV     NAV    NAV       NAV  */
+
+.img-menu{
+	position: relative;
+	margin-left: 65px;
+	width: 60%;
+}
+
+.menu{
+	list-style: none;
+	font-size: 16pt;
+}
+
+.lista3{
+	display:block;
+	padding: 5px;
+	text-align: center;
+}
+
+.link4{
+	
+	text-decoration: none;
+	color: black;
+	padding-right: 80px;
+	background: #04B404;
+	text-align: center;
+	padding-left: 80px;
+	border-radius:8px;	
+}
+
+.link4:hover{
+	background:#BFFF00;
+}	
+
+.nav2{
+	margin: 15px; 
+}
+
+.ul-nav2{
+	width: 220px;
+	background-color: #04B404;
+	opacity: 0.8;
+	align-items: center;
+	text-align: center;
+	margin-left: 40px;
+	list-style: none;
+}
+
+.h2{
+	margin-left: 80px;
+}
+
+
+/* Section */
+
+.p1{
+	margin-left: 20px;
+	top: 20px;
+	position: relative;  
+}
+
+.article1{
+	
+	height: 40vh;
+}
+
+.img-texto{
+	width: 30vh;
+	position: relative;
+	top: 30px;
+}
+
+.texto1{
+	margin-left: 200px;
+	font-size: 0.9em;
+	width: 400px;
+	position: relative;
+	top: -110px;
+	padding-right: 30px;
+}
+
+h5{
+	position: relative;
+	margin-left: 200px;
+	top:-115px;
+	font-weight: bold;
+}
+
+figcaption{
+	position: relative;
+	top: 25px;
+	margin-left: 20px;
+	font-style: italic;
+}
+
+.article2{
+	width: 100vh;
+	height: 20vh;
+	background: linear-gradient(#04B404,#2EFE9A,#04B404);
+}
+
+.h4, .texto2 {
+	margin-left: 3vh;
+}
+
+.texto3{
+	margin-left: 3vh;
+	font-size: 10pt;
+	width: 63%;
+	left: 50%;
+	float: right;
+}
+
+/* footer */
+
+.div-footer{
+	font-size: 14pt;
+	list-style: none;
+	position: relative;
+	margin-left: 0vh;
+	top: 0px;
+}
+
+.lista2-footer{
+	display: inline;
+}
+
+.lista-footer{
+	float: right;
+	position: relative;
+	list-style: none;
+}
+
+.listafooter{
+	display: inline;
+	border-right: 1px solid black;
+	padding-right: 2px;
+}
+
+
+.div1-aside{
+	
+	width: 100%;
+	height: 50vh;
+	box-sizing: border-box;
+}
+
+.div2-aside{
+	width: 100%;
+	height: 22vh;
+	box-sizing: border-box;
+}
+
+.div3-aside{
+	width: 100%;
+	height: 22vh;
+	box-sizing: border-box;
+}
+
+h6{
+	width: 40%;
+	height: 21vh;
+	box-sizing: border-box;
+	font-size: 1.7em;
+	align-items:  center;
+}
+
+.slide-img{
+	width: 70%;
+	align-items: center;
+	position: relative;
+	margin-left: 15%;
+	top: 28px;	
+}
+
+.slide-img:hover{
+	-moz-transform: scale(1.3);
+  -webkit-transform: scale(1.4);
+  -o-transform: scale(1.3);
+  transition-duration: 0.2s;
+}
+
+.data{
+	margin-left: 20px;
+	width: 30%;
+	float: left;
+}*/
