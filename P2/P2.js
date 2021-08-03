@@ -14,7 +14,43 @@ function verificar(){
     var milesimos = Math.abs(data_chegada.getTime() - data_saida.getTime());
     var dias = milesimos / (1000 * 3600 * 24);
     alert(dias);
-    alert("Valor Total da Reserva é: R$ ");
+
+    dias /= 1000; // Milisegundos para Segundos
+    dias /= 86400; // segundos para dias
+    dias = Math.round(dias);
+
+    if(saida.value < chegada.value){
+    document.getElementById(c.id).style.borderColor = "red";
+    document.getElementById(s.id).style.borderColor = "red";
+    alert("Data da saída está antes da data de chegada!");
+    }
+    
+    else if(quarto_single.value == pessoas.value){
+    alert("Total a pagar: R$ " + 139 * dias + ",00");
+    }
+    else if(quarto_double.value == pessoas.value){
+    alert("Total a pagar: R$ " + 220 * dias + ",00");
+    }
+    else if(quarto_triplo.value == pessoas.value){
+    alert("Total a pagar: R$ " + 340 * dias + ",00");
+    }
+    else if(pessoas.value > quarto_single.value){
+    pessoas = 30*(pessoas.value - quarto_single.value);
+    total = (139 * quarto_single.value * dias) + pessoas;
+    alert("Total a pagar: R$ " + total * dias + ",00");
+    }
+    
+    else if(pessoas.value > quarto_double.value){
+    pessoas = 30*(pessoas.value - quarto_double.value);
+    total = (220 * quarto_double.value * dias) + pessoas;
+    alert("Total a pagar: R$ " + total * dias + ",00");
+    }
+
+    else if(pessoas.value > quarto_triplo.value){
+    pessoas = 30*(pessoas.value - quarto_triplo.value);
+    total = (340 * quarto_triplo.value * dias) + pessoas;
+    alert("Total a pagar: R$ " + total * dias + ",00");
+    }
 }
 
  function validarForm(){
